@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kulim+Park&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Didact+Gothic&family=Julius+Sans+One&display=swap" rel="stylesheet">
+
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	 <title>Online Kissan Mart</title>
+  <meta chrset="utf-8">
+	<style>
+		*{
+		margin:0;
+		text-decoration:none;
+		
+		}
+
+		button{
+		position:absolute;
+		left: 88%;
+		width:auto;
+		border:none;
+		outline:none;
+		color:white;
+		padding: 10px 20px;
+		background-color: #31d831d4;
+		font-size:17px;
+	              margin-left: 30px;
+
+ 		}
+		input[type="search"] {
+    		 position: absolute;
+   		 left: 60%;
+		 padding:12px;
+		 width: 30%;
+		 border-right: none;
+		 outline: none;
+		display: flex;
+		 border: 1px solid #ccccccba;
+		 border-radius: 5px;
+		 font-family: 'Kulim Park', sans-serif;
+		}
+		input[type="search"]:focus {
+		border: 1px solid  rgba(89, 178, 16, 1);
+		}
+
+
+		img.food {
+    		 position: absolute;
+   		 right: 80%;
+		 margin-top: 10px;
+
+		}
+		
+		h1{
+		font-family: 'Kulim Park', sans-serif;
+		text-align:center;
+		}
+		.nav{
+		padding:20px;
+		text-align:center;
+		background-color: rgba(89, 178, 16, 1);
+		font-family: 'Kulim Park', sans-serif;
+		}
+		.nav a{
+		padding: 30px;
+		color:white;
+		}
+		.nav a:hover {
+		background-color:white;
+		color:black;
+		transition: 1s;
+		}
+
+		::placeholder {
+ 		 color: #ccc;
+		 font-family: 'Kulim Park', sans-serif;
+		 font-size:16px;
+		 text-align: center;
+		}
+		.nav img, .customer{
+		float:right;
+		background-color: #cccccca8;
+  		border-radius: 50%;
+		cursor:pointer;
+		}
+		.top{
+		background: rgba(89, 178, 16, 1);
+		color:white;
+		padding:15px;
+		}
+		p{
+		color:white;
+		font-family: 'Kulim Park', sans-serif;
+		}
+		.phone{
+		float:left;
+		font-family: 'Kulim Park', sans-serif;
+		}
+		.center{
+		text-align:center;
+		font-family: 'Kulim Park', sans-serif;
+
+
+		}
+		.footer{
+		font-family: 'Darker Grotesque', sans-serif;
+		display: flex;
+		flex-direction: row;
+	      	flex-wrap: wrap;
+	     	justify-content: space-around;
+	      	align-items: space-evenly;
+	
+		}
+		h3 {
+    		background:  #cccccc66;
+    		padding: 8px 80px;
+	
+		}
+		h3:hover{
+		background: darkgrey;
+		}
+		h4{
+		text-align:center;
+		margin:20px;
+		}
+		h4 a{
+		color:black;
+		}
+		h4 a:hover{
+		text-decoration:underline;
+		}
+		.foot{
+		padding:20px;
+		text-align:center;
+		background-color: black;
+		color:white;
+		font-family: 'Kulim Park', sans-serif;
+		}
+		.forms input{
+		width: 20%;
+		padding:12px;
+		border-radius: 7px;
+		outline:none;
+		}
+		a.continue {
+    		background-color: rgba(89, 178, 16, 1);
+    		padding: 10px 110px;
+    		color: white;
+    		font-family: 'Kulim Park', sans-serif;
+		position: absolute;
+    		right: 30%;
+		transition: .5s;
+		}
+		a.continue:hover{
+		background-color: #FF0000;
+		}
+		.formcont{
+		text-align:center;
+		}
+		h6{
+		font-size:30px;
+		font-family: 'Kulim Park', sans-serif;
+		}
+		label{
+		font-family: 'Kulim Park', sans-serif;
+		}
+		  .container {
+	      	display: flex;
+	      	justify-content: space-around;
+	      	align-items: space-evenly;
+	      	text-decoration:none;
+		margin:10px;
+	   	}
+		.billing{
+		width: 50%;
+		}
+		input[type="email"] {
+		width: 100%;
+    		padding: 10px;
+    		border: 1px solid #ccccccd6;
+		}
+		input[type="password"] {
+		width: 100%;
+    		padding: 10px;
+    		border: 1px solid #ccccccd6;
+		}
+		input[type="text"] {
+		width: 100%;
+    		padding: 10px;
+    		border: 1px solid #ccccccd6;
+		}
+		input[type="month"] {
+		width: 100%;
+    		padding: 10px;
+    		border: 1px solid #ccccccd6;
+		}
+		.text {
+    		position: absolute;
+    		top: 100%;
+    		right: 10%;
+		}
+		h5{
+		color:white;
+		font-size: 2.5em;
+		}
+		a.pay {
+    		background: #cccccc42;
+    		padding: 10px 40px;
+		color:white;
+		border: 1px solid #ccc;	
+		}
+		
+		.dropdown {
+		  display: inline-block;
+		}
+
+		.dropdown-content {
+  		display: none;
+  		position: absolute;
+  		min-width: 160px;
+  		z-index: 1;
+		background:  rgba(89, 178, 16, 1);
+		}
+
+		.dropdown-content a {
+  		color: black;
+
+  		text-decoration: none;
+  		display: block;
+		}
+
+		.dropdown-content a:hover {
+		background-color: #f1f1f1;
+		}
+
+		.dropdown:hover .dropdown-content {
+  		display: block;
+		}
+		.photo{
+		text-align: center;
+		}
+
+	</style>
+
+
+</head>
+<div class="top">
+                <p class="phone">Contact: 9840297322  </p>
+                <p class="center">Email: kisanmart@gmail.com  </p> 
+           
+</div>
+<div class="header">
+ <sapn><img src="images/head.png"width="250" class="food"></sapn>
+
+<body>
+<br>
+<br>
+	<input type="search" placeholder="search" name="search"><button>search</button>
+
+</div>
+<br>
+<br>
+<br>
+<div class="nav">
+<a href="index.html">HOME</a>
+<div class="dropdown">
+  <a href="#" class="dropbtn">VEGITABLES<i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+  <div class="dropdown-content">
+  <a href="dry.html">Dry Vegitables </a>
+  <a href="#"> Green Vegitables </a>
+  <a href="#"> Seasonal Vegitables </a>
+  </div>
+</div>  
+
+<a href="#">CUSTOMER</a>
+<a href="about us.html">ABOUT</a>
+<img src="images/customer.png"width="30" class="customer" id="login">
+</div>
+
+
+       <img src="images/payment.jpg" width="100%;">
+	
+	<div class="text">
+	 <h5> Debit And Credit Cards </h5>	
+	<p> We really think of bitcoin of as global, interoperable <br>payment networks instead of a store of money.!!</p><br><br>
+		<a href="#" class="pay"> Learnmore </a>
+ 
+	</div>
+		<div class="photo">
+		  <img src="images/payment2.gif">
+		</div>
+
+              <br>
+	<br>
+		<h1>Payment  Method</h1>
+	<div class="container">
+
+	<div class="billing">		
+
+                 <h6>Billing Adress</h6>
+	<br>
+          <label>Email Adress</label>
+	<input type="email" placeholder="Enter Email" name="email"><br><br> 
+
+	  <label>Password</label>
+              <input type="password" placeholder=" Enter password" name="password"> <br><br>
+		
+	<label>City</label>
+	<input type="text" placeholder="Kathmandu" name="city">
+	</div>
+                
+	<div class="cards">
+	<h6>Accapted Cards</h6>
+		           <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+		<label> Nmae on card</label>
+		<input type="text" placeholder="bastola" >
+
+ 		<br><br>
+
+		<label> Credit Card No: </label>
+		<input type="text" placeholder="111-222-333" > 
+
+   		<br><br>
+			
+		<label> EXP month </label>
+		<input type="month" placeholder="december" >
+		
+    	</div>
+
+         </div>
+ </form>
+</div>
+
+<a href="#" class="continue">Continue to Checkout</i></a>	
+    <br><br><br><br><br><br>
+
+
+
+
+<div class="footer">
+
+<img src="images/head.png" width="400">
+
+ <div class="about">
+	<h3>About</h3>
+	 <a href="#"><h4> About Us </a></h4>	
+	 <a href="#"><h4> Delivery </a></h4>
+	 <a href="#"><h4> Privacy & Policy </a></h4>		
+	 
+		
+ </div>
+
+<div class="account">
+	<h3>My Account</h3>
+	 <a href="#"><h4> My Account </a></h4>
+	 <a href="#"><h4> Order History </a></h4>
+	 <a href="#"><h4> Recent Login </a></h4>
+ </div>
+
+<div class="follow">
+	<h3> Customer Service</h3>
+	 <a href="#"><h4> Contact </a></h4>
+	 <a href="#"><h4> Brands </a></h4>
+	 <a href="#"><h4> Site Map </a></h4>
+ </div>
+
+</div>
+
+<div class="foot">
+     Copyright &copy  2021 Online Kisan Mart, All Rihghts Reserved
+<div>
+
+
+
+</body>
+</html>
